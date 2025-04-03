@@ -43,15 +43,19 @@ public class Main {
             if (firstArray[i] % 2 != 0)
                 firstArray[i] += 1;
         }
-        for (int i = 0; i < firstArray.length; i++) {
-            System.out.print(firstArray[i]);
-            {
-                if (i != 2)
-                    System.out.print(", ");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; i < firstArray.length; i++) {
+                System.out.print(firstArray[i]);
+                {
+                    if (j != 2)
+                        System.out.print(", ");
+                }
             }
         }
     }
 }
+
+
 
 
 
