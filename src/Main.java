@@ -29,7 +29,7 @@ public class Main {
             System.out.print(firstArray[i]);
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = 2; i >= secondArray.length; i--) {
             System.out.print(secondArray[i]);
             if (i != 0)
                 System.out.print(", ");
