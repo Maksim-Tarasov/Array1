@@ -6,37 +6,42 @@ public class Main {
 
         for (int i = 0; i < firstArray.length; i++) {
             if (i != 0) {
-                System.out.print(", ");
+                System.out.print(",");
             }
             System.out.print(firstArray[i]);
         }
         System.out.println();
         for (int i = 0; i < secondArray.length; i++) {
             if (i != 0) {
-                System.out.print(", ");
+                System.out.print(" ");
             }
             System.out.print(secondArray[i]);
         }
         System.out.println();
         for (int i = 0; i < thirdArray.length; i++) {
-            System.out.print(thirdArray[i] + ",");
+            System.out.print(thirdArray[i] );
+                if(i!=thirdArray.length-1){
+                    System.out.print(",");
+            }
         }
         System.out.println();
         for (int i = firstArray.length - 1; i >= 0; i--) {
             if (i != firstArray.length - 1) {
-                System.out.print(", ");
+                System.out.print(",");
             }
             System.out.print(firstArray[i]);
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = secondArray.length - 1; i >= 0; i--) {
             System.out.print(secondArray[i]);
             if (i != 0)
-                System.out.print(", ");
+                System.out.print(",");
         }
         System.out.println();
         for (int i = thirdArray.length - 1; i >= 0; i--) {
-            System.out.print(thirdArray[i] + ",");
+            System.out.print(thirdArray[i] );
+            if(i!=0){
+                System.out.print(",");}
         }
         System.out.println();
         for (int i = 0; i < firstArray.length; i++) {
@@ -45,13 +50,16 @@ public class Main {
         }
         for (int i = 0; i < firstArray.length; i++) {
             System.out.print(firstArray[i]);
-            {
-                if (i != 2)
+            if (i != firstArray.length-1 )
+                {
                     System.out.print(", ");
+                }
             }
         }
     }
-}
+
+
+
 
 
 
